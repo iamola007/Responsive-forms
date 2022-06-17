@@ -1,0 +1,297 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* My code begins here */
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+#content {
+  display: flex;
+  background: hsl(185, 75%, 39%);
+  height: 700px;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 60px;
+  margin-bottom: 20px;
+}
+
+#top-pattern {
+  margin-top: -700px;
+  margin-left: -400px;
+}
+
+#bottom-pattern {
+  margin-bottom: -1000px;
+  margin-right: -100px;
+  margin-left: -200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: #ffffff;
+  height: 400px;
+  margin-left: -100px;
+  position: relative;
+}
+
+#pattern {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#image1 {
+  border-radius: 57px;
+  margin-top: -48px;
+  border: 6px solid #ffffff;
+}
+
+.item1 {
+  margin-top: 20px;
+}
+
+.victor {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.age {
+  font-size: 18px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.city {
+  font-size: 12px;
+  color: hsl(227, 10%, 46%);
+  margin: 10px;
+  letter-spacing: 1px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  margin-top: 25px;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  background: #ffffff;
+  background: solid;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.followers-icon {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.likes-icon {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.photos-icon {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.stats1 {
+    margin: 25px;
+  }
+  
+.stats2 {
+    margin: 25px;
+  }
+  
+.stats3 {
+    margin: 25px;
+  }
