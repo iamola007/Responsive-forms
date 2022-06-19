@@ -34,10 +34,15 @@
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
         <div class="form-container">
-          <form onsubmit="return validate()" action="" id="form">
+          <form id="signup" class="form">
             <div class="input-container">
               <div class="input-group">
-                <input id="fname" type="text" placeholder="First Name" />
+                <input
+                  id="firstName"
+                  type="text"
+                  placeholder="First Name"
+                  autocomplete="off"
+                />
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
                     <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -63,8 +68,13 @@
               <p>First Name cannot be empty</p>
             </div>
             <div class="input-container">
-              <div class="input-group validate">
-                <input id="lname" type="text" placeholder="Last Name" />
+              <div class="input-group">
+                <input
+                  id="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                  autocomplete="off"
+                />
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
                     <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -91,7 +101,12 @@
             </div>
             <div class="input-container">
               <div class="input-group">
-                <input id="email" type="email" placeholder="Email Address" />
+                <input
+                  id="email"
+                  type="text"
+                  placeholder="Email Address"
+                  autocomplete="off"
+                />
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
                     <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -117,8 +132,13 @@
               <p>Looks like this is not an email</p>
             </div>
             <div class="input-container">
-              <div class="input-group validate">
-                <input id="pass" type="password" placeholder="Password" />
+              <div class="input-group">
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                  autocomplete="off"
+                />
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
                     <circle fill="#FF7979" cx="12" cy="12" r="12" />

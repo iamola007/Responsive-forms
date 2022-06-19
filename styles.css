@@ -96,11 +96,11 @@ input {
   border-radius: 5px;
 }
 
-.validate input {
+.error input {
   color: hsl(0, 100%, 74%);
 }
 
-.validate {
+.error {
   border: 2px solid hsl(0, 100%, 74%);
 }
 
@@ -108,7 +108,7 @@ svg {
   visibility: hidden;
 }
 
-.validate svg {
+.error svg {
   visibility: visible;
 }
 
@@ -122,12 +122,12 @@ svg {
   font-size: 10px;
   margin-top: -5px;
   font-style: italic;
-  visibility: hidden;
+  display: none;
 }
 
-.validate + p {
+.error + p {
   color: hsl(0, 100%, 74%);
-  visibility: visible;
+  display: block;
 }
 
 input::placeholder {
