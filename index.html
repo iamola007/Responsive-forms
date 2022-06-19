@@ -2,91 +2,156 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="https://res.cloudinary.com/dny4fdht3/image/upload/v1615143381/profile%20card%20images/favicon-32x32_rnuwwc.png"
+      href="images 4/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-
-    <title>Responsive forms</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Responsive Forms</title>
   </head>
   <body>
-    <div id="content">
-      <img
-        id="top-pattern"
-        src="https://res.cloudinary.com/dny4fdht3/image/upload/v1615143380/profile%20card%20images/bg-pattern-top_ydvrmc.svg"
-        alt=""
-      />
-      <div class="container">
-        <img
-          id="pattern"
-          src="https://res.cloudinary.com/dny4fdht3/image/upload/v1615143380/profile%20card%20images/bg-pattern-card_hf8pa9.svg"
-          alt=""
-        />
-        <img
-          id="image1"
-          src="https://res.cloudinary.com/dny4fdht3/image/upload/v1615143381/profile%20card%20images/image-victor_mqekmb.jpg"
-          alt=""
-        />
-
-        <div class="item1">
-          <span class="victor">Victor Crest</span><span class="age">26</span>
+    <main>
+      <article>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </article>
+      <section>
+        <div class="banner">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
-        <div class="city">London</div>
-        <div class="stats">
-          <div class="stats1">
-            <ul>
-              <li>80K</li>
-              <li class="followers-icon">Followers</li>
-            </ul>
-          </div>
-          <div class="stats2">
-            <ul>
-              <li>803k</li>
-              <li><span class="likes-icon">Likes</span></li>
-            </ul>
-          </div>
-          <div class="stats3">
-            <ul>
-              <li>1.4k</li>
-              <li><span class="photos-icon">Photos</span></li>
-            </ul>
-          </div>
+        <div class="form-container">
+          <form onsubmit="return validate()" action="" id="form">
+            <div class="input-container">
+              <div class="input-group">
+                <input id="fname" type="text" placeholder="First Name" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="6"
+                      width="2"
+                      height="9"
+                      rx="1"
+                    />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="17"
+                      width="2"
+                      height="2"
+                      rx="1"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p>First Name cannot be empty</p>
+            </div>
+            <div class="input-container">
+              <div class="input-group validate">
+                <input id="lname" type="text" placeholder="Last Name" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="6"
+                      width="2"
+                      height="9"
+                      rx="1"
+                    />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="17"
+                      width="2"
+                      height="2"
+                      rx="1"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p>Last Name cannot be empty</p>
+            </div>
+            <div class="input-container">
+              <div class="input-group">
+                <input id="email" type="email" placeholder="Email Address" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="6"
+                      width="2"
+                      height="9"
+                      rx="1"
+                    />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="17"
+                      width="2"
+                      height="2"
+                      rx="1"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p>Looks like this is not an email</p>
+            </div>
+            <div class="input-container">
+              <div class="input-group validate">
+                <input id="pass" type="password" placeholder="Password" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="6"
+                      width="2"
+                      height="9"
+                      rx="1"
+                    />
+                    <rect
+                      fill="#FFF"
+                      x="11"
+                      y="17"
+                      width="2"
+                      height="2"
+                      rx="1"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <p>Password cannot be empty</p>
+            </div>
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            <p>
+              By clicking the button, you are agreeing to our
+              <a href="#" id="terms">Terms and Services</a>
+            </p>
+          </form>
         </div>
-      </div>
-      <img
-        id="bottom-pattern"
-        src="https://res.cloudinary.com/dny4fdht3/image/upload/v1615143380/profile%20card%20images/bg-pattern-bottom_jnbvll.svg"
-        alt=""
-      />
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Ola Oladapo</a>.
-    </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
